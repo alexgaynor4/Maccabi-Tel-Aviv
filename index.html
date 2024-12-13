@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="shortcut icon" href="">
+  <title>Player Data</title>
+  <style>
+    /* Add CSS styles for your webpage */
+  </style>
+</head>
+<body>
+  <h1>Player Data</h1>
+
+  <!-- Filter inputs -->
+  <div>
+    <label for="filterName">Filter by Name:</label>
+    <input type="text" id="filterName">
+  </div>
+
+  <div>
+    <label for="filterAge">Maximum Age:</label>
+    <input type="number" id="filterAge" min="16">
+  </div>
+
+  <div>
+    <label for="filterPointsPerSet">Minimum Points per Set:</label>
+    <input type="number" id="filterPointsPerSet" min="0" step="0.1">
+  </div>
+
+  <div>
+    <label for="filterAcesPerSet">Minimum Aces per Set:</label>
+    <input type="number" id="filterAcesPerSet" min="0" step="0.1">
+  </div>
+
+  <div>
+    <label for="filterBlocksPerSet">Minimum Blocks per Set:</label>
+    <input type="number" id="filterBlocksPerSet" min="0" step="0.1">
+  </div>
+
+  <div>
+    <label for="filterReceptionPercentage">Minimum Reception Percentage:</label>
+    <input type="number" id="filterReceptionPercentage" min="20" step="1">
+  </div>
+
+  <div>
+    <label for="filterAttackPercentage">Minimum Attack Percentage:</label>
+    <input type="number" id="filterAttackPercentage" min="20" step="1">
+  </div>
+
+  <div>
+    <label for="filterPosition">Filter by Position:</label>
+    <select id="filterPosition" multiple>
+        <!-- Options will be populated dynamically using JavaScript -->
+    </select>
+  </div>
+
+  <div>
+    <label for="filterNationality">Filter by Nationality:</label>
+    <select id="filterNationality" multiple>
+        <!-- Options will be populated dynamically using JavaScript -->
+    </select>
+  </div>
+
+  <!-- Sort options -->
+  <label for="sortOption">Sort by:</label>
+  <select id="sortOption">
+    <option value="name">Name</option>
+    <option value="age">Age</option>
+    <option value="pointsPerSet">Points per Set</option>
+    <option value="acesPerSet">Aces per Set</option>
+    <option value="blocksPerSet">Blocks per Set</option>
+    <option value="receptionPercentage">Reception Percentage</option>
+    <option value="attackPercentage">Attack Percentage</option>
+  </select>
+
+  <div>
+  <input type="radio" id="sortOrderIncrease" name="sortOrder" value="asc" checked>
+  <label for="sortOrderIncrease">Increase</label>
+  <input type="radio" id="sortOrderDecrease" name="sortOrder" value="desc">
+  <label for="sortOrderDecrease">Decrease</label>
+  </div>
+
+  <!-- Table to display player data -->
+  <table id="playerTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Height</th>
+        <th>Nationality</th>
+        <th>Position</th>
+        <th>Points per Set</th>
+        <th>Aces per Set</th>
+        <th>Blocks per Set</th>
+        <th>Reception Percentage</th>
+        <th>Attack Percentage</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Player data rows will be populated dynamically using JavaScript -->
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
