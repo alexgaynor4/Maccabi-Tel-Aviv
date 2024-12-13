@@ -1,3 +1,5 @@
+The python files are used to scrape the various International volleyball league websites. Overall.py runs them in order. script.js and index.html are used to display the csv and have filters for different statistics. A recently updated version of the statistics is seen in players.csv
+
 To view website:
 
 Download Python: https://www.python.org/downloads/
